@@ -1,0 +1,49 @@
+POST http://localhost:8080/add-table
+content-type: application/json
+
+{
+     "number": 2
+}
+
+################################
+
+POST http://localhost:8080/order
+content-type: application/json
+
+{
+     "tableId": "64a77986e301161aadb7dddf",
+     "startTime": "2023-07-07T06:50:00.321+00:00",
+     "endTime": "2023-07-07T06:56:00.321+00:00"
+}
+
+################################
+PUT http://localhost:8080/order/64a7b5b648a5947638984110
+content-type: application/json
+
+################################
+POST http://localhost:8080/user
+content-type: application/json
+
+{
+     "name": "quyen 3",
+     "dateOfBirth": "2020-07-07T06:51:17.321+00:00",
+     "phoneNumber": "0984729348"
+}
+
+################################
+POST http://localhost:8080/phoneCall
+content-type: application/json
+
+{
+     "caller": "64a7c7fb52edc41145af18bd",
+     "receiver": "64a7c056efa913ab38344c1e",
+     "startTime": "2023-07-07T06:55:00.321+00:00",
+     "endTime": "2023-07-07T06:55:17.321+00:00"
+}
+
+################################
+GET http://localhost:8080/phoneCall/rank
+
+
+################################
+GET http://localhost:8080/phoneCall/user/rank
